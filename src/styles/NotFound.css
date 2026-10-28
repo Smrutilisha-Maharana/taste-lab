@@ -1,0 +1,114 @@
+.not-found-page {
+  min-height: 100vh;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(255, 149, 0, 0.13), transparent 34%),
+    #191919;
+}
+
+.not-found-content {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 24px;
+  text-align: center;
+}
+
+.not-found-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 25px;
+  color: #191919;
+  background: var(--primary);
+  border-radius: 20px;
+  box-shadow: 0 14px 35px rgba(255, 215, 0, 0.12);
+  font-size: 28px;
+  transform: rotate(-8deg);
+}
+
+.not-found-code {
+  margin-bottom: 15px;
+  color: var(--secondary);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.not-found-content h1 {
+  max-width: 720px;
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2.4rem, 6vw, 4.7rem);
+  line-height: 1.1;
+}
+
+.not-found-content h1 span {
+  color: var(--primary);
+}
+
+.not-found-content > p {
+  max-width: 520px;
+  margin: 20px 0 30px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.not-found-primary,
+.not-found-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.not-found-primary {
+  color: #191919;
+  background: linear-gradient(135deg, #ffe34d, #ffb900);
+}
+
+.not-found-secondary {
+  color: var(--primary);
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  background: rgba(255, 215, 0, 0.06);
+}
+
+.not-found-primary:hover,
+.not-found-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.not-found-secondary:hover {
+  background: rgba(255, 215, 0, 0.13);
+}
+
+.not-found-primary:focus-visible,
+.not-found-secondary:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+@media (max-width: 760px) {
+  .not-found-content {
+    min-height: calc(100vh - 70px);
+    padding: 55px 20px;
+  }
+}

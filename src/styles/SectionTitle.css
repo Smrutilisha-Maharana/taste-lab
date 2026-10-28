@@ -1,0 +1,61 @@
+.section-title {
+  max-width: 680px;
+  color: var(--text, #ffffff);
+}
+
+.section-title-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: var(--secondary, #ff9500);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.section-title-line {
+  width: 28px;
+  height: 2px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: inherit;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.section-title h2 span {
+  color: var(--secondary, #ff9500);
+}
+
+.section-title p {
+  max-width: 590px;
+  margin: 16px 0 0;
+  color: var(--muted, #c2c2c2);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.section-title-center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.section-title-center .section-title-eyebrow {
+  justify-content: center;
+}
+
+.section-title-center p {
+  margin-right: auto;
+  margin-left: auto;
+}
